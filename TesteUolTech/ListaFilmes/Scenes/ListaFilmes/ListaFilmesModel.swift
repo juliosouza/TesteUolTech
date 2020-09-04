@@ -11,15 +11,9 @@ import Foundation
 enum ListaFilmesEnum {
     
     struct Response: Codable {
-        let created_by: String
-        let description: String
-        let favorite_count: Int
         let id: String
         let items: [items]
         let item_count: Int
-        let iso_639_1: String
-        let name: String
-        let poster_path: String
     }
     
     
