@@ -118,7 +118,7 @@ extension ListaFilmesViewController: UICollectionViewDataSource, UICollectionVie
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! MovieCollectionViewCell
         
-        cell.labelMovie.text = list[indexPath.row].original_title
+        cell.labelMovie.text = list[indexPath.row].title
         cell.imageMovie.layer.cornerRadius = 10
         cell.imageMovie.contentMode = .scaleAspectFill
         cell.imageMovie.download(from: Constants.baseImageURL + list[indexPath.row].poster_path)
